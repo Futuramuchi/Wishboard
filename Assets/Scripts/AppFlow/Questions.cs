@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class QuestionsManager : MonoBehaviour
+public class Questions : MonoBehaviour
 {
     public QuestionData[] Data;
 
     [SerializeField] private QuestionView questionView;
+    [Space]
+    [SerializeField] private FinalScreen finalScreen;
 
     private int _currentQuestion;
     
@@ -12,14 +14,19 @@ public class QuestionsManager : MonoBehaviour
     {
         questionView.NextQuestionButtonClicked += OnNextQuestionButtonClicked;
 
-        questionView.Set(Data[0]);
+        questionView.Set(Data[0], $"1/{Data.Length}");
     }
 
     private void OnNextQuestionButtonClicked()
     {
+        if (_currentQuestion == Data.Length - 1)
+        {
+            finalScreen.gameObject.SetActive(true);
+        }
+
         _currentQuestion += 1;
 
-        questionView.Set(Data[_currentQuestion]);
+        questionView.Set(Data[_currentQuestion], $"{_currentQuestion + 1}/{Data.Length}");
     }
 }
 

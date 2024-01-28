@@ -1,4 +1,5 @@
 using DG.Tweening;
+using JetBrains.Annotations;
 using System;
 using TMPro;
 using UnityEngine;
@@ -15,6 +16,8 @@ public class QuestionView : MonoBehaviour
     [SerializeField] private ToggleGroup toggleGroup;
     [Space]
     [SerializeField] private Button nextQuestionButton;
+    [Space]
+    [SerializeField] private TextMeshProUGUI pages;
     [Header("DragAndDrop")]
     [SerializeField] private WishPart wishPartTemplate;
     [SerializeField] private Transform wishPartFrame;
@@ -23,20 +26,21 @@ public class QuestionView : MonoBehaviour
 
     private WishPart _currentWishPart;
 
-    //private Vector2 _basePosition;
+    private Vector2 _basePosition;
 
-    private void Awake()
+    private void Start()
     {
-        nextQuestionButton.onClick.AddListener(() => NextQuestionButtonClicked?.Invoke());
+        nextQuestionButton.onClick.AddListener(PlayNextAnimation);
 
-        //_basePosition = transform.position;
+        _basePosition = transform.position;
     }
 
-    public void Set(QuestionData data)
+    public void Set(QuestionData data, string page)
     {
-        //transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.right * Screen.width);
+        transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.right * Screen.width);
 
         questionText.text = data.Question;
+        pages.text = page;
 
         foreach (Transform child in buttonsRoot)
             Destroy(child.gameObject);
@@ -45,7 +49,7 @@ public class QuestionView : MonoBehaviour
 
         if (data.Type == QuestionType.DragAndDrop)
         {
-            _currentWishPart = Instantiate(wishPartTemplate, wishPartFrame);
+            _currentWishPart = Instantiate(wishPartTemplate, background.transform);
         }
 
         foreach (var answer in data.Answers)
@@ -66,5 +70,15 @@ public class QuestionView : MonoBehaviour
                 }
             });
         }
+    }
+
+    public void PlayNextAnimation()
+    {
+        transform
+            .DOMove(_basePosition - Vector2.left * Screen.width, 0.45f)
+            .OnComplete(() =>
+            {
+                NextQuestionButtonClicked?.Invoke();
+            });
     }
 }
