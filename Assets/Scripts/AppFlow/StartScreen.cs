@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -46,6 +47,8 @@ public class StartScreen : MonoBehaviour
         else
         {
             hintText.text = _loginData[_triesCount].Hint;
+
+            (hintText.transform as RectTransform).DOShakeRotation(0.35f, new Vector3() { z = 2 }, 30, 90, false, ShakeRandomnessMode.Harmonic);
         }
     }
 
