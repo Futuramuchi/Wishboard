@@ -35,6 +35,8 @@ public class QuestionView : MonoBehaviour
         if (_isInitialized) 
             return;
 
+        _isInitialized = true;
+
         nextQuestionButton.onClick.AddListener(PlayNextAnimation);
 
         _basePosition = transform.position;
