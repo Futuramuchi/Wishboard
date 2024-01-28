@@ -46,6 +46,8 @@ public class QuestionView : MonoBehaviour
     {
         Initialize();
 
+        nextQuestionButton.gameObject.SetActive(false);
+
         transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.right * Screen.width);
 
         questionText.text = data.Question;
@@ -77,6 +79,8 @@ public class QuestionView : MonoBehaviour
                 {
                     _currentWishPart.Set(answer.Image, wishPartFrame.position);
                 }
+
+                nextQuestionButton.gameObject.SetActive(true);
             });
         }
     }
