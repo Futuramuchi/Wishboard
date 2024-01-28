@@ -28,8 +28,13 @@ public class QuestionView : MonoBehaviour
 
     private Vector2 _basePosition;
 
-    private void Start()
+    private bool _isInitialized;
+
+    private void Initialize()
     {
+        if (_isInitialized) 
+            return;
+
         nextQuestionButton.onClick.AddListener(PlayNextAnimation);
 
         _basePosition = transform.position;
@@ -37,6 +42,8 @@ public class QuestionView : MonoBehaviour
 
     public void Set(QuestionData data, string page)
     {
+        Initialize();
+
         transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.right * Screen.width);
 
         questionText.text = data.Question;
