@@ -22,8 +22,8 @@ public class StartScreen : MonoBehaviour
     private readonly List<LoginData> _loginData = new()
     {
         new LoginData("<b>Подсказка:</b> Дата выхода судебного модуля PJM", "15032016"),
-        new LoginData("<b>Подсказка:</b> Тут что-то будет 1", "123"),
-        new LoginData("<b>Подсказка:</b> Тут что-то будет 2", "1233")
+        new LoginData("<b>Подсказка:</b> Сумма всех цифр равна 18", "15032016"),
+        new LoginData("<b>Подсказка:</b> Это был запоздалый подарок девушкам на 8 марта", "15032016")
     };
 
     private void Start()
@@ -35,6 +35,14 @@ public class StartScreen : MonoBehaviour
         loginButton.onClick.AddListener(OnLoginButtonClicked);
 
         hintText.text = _loginData[_triesCount].Hint;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            OnLoginButtonClicked();
+        }
     }
 
     private void OnLoginButtonClicked()
