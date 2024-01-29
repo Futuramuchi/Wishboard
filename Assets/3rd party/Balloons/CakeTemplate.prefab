@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5228923090343605059}
   - component: {fileID: 2659807766979500119}
   m_Layer: 5
-  m_Name: BalloonTempalte
+  m_Name: CakeTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,13 +61,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2a29c7f7ce05db4418d35e0e8883c687, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c305ee73c2297884e960636748f2f8c1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
