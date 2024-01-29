@@ -769,7 +769,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -0.009887695, y: 40.7}
+  m_AnchoredPosition: {x: 903, y: 550}
   m_SizeDelta: {x: -103.0322, y: 51.170807}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &395335952
@@ -1114,7 +1114,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 30
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1861,8 +1861,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 660.1223, y: -179.24883}
-  m_SizeDelta: {x: 1320.2446, y: 358.49765}
+  m_AnchoredPosition: {x: 250.61322, y: -310.8764}
+  m_SizeDelta: {x: 541.0764, y: 621.7528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &870274889
 MonoBehaviour:
@@ -2093,7 +2093,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -28.900024, y: -0.000030517578}
+  m_AnchoredPosition: {x: -21, y: -0.000030517578}
   m_SizeDelta: {x: 69.7061, y: 69.7061}
   m_Pivot: {x: 0.9999997, y: 0.5}
 --- !u!114 &906934430
@@ -2286,8 +2286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.252, y: 0.0055555557}
   m_AnchorMax: {x: 0.75000006, y: 0.62100005}
-  m_AnchoredPosition: {x: -1.920105, y: 36}
-  m_SizeDelta: {x: 57.6356, y: -48.0953}
+  m_AnchoredPosition: {x: 267.28, y: 36}
+  m_SizeDelta: {x: 357.4399, y: 204.9366}
   m_Pivot: {x: 0.5, y: 0.000000011602374}
 --- !u!114 &1152011774
 MonoBehaviour:
@@ -2484,8 +2484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1594.1724, y: -179.24883}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: 250.61, y: -823}
+  m_SizeDelta: {x: 541.08, y: 358.4977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1168511941
 MonoBehaviour:
@@ -3062,7 +3062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1493492636
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3092,7 +3092,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493492635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
   m_Name: 
