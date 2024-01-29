@@ -16,6 +16,10 @@ public class StartScreen : MonoBehaviour
     [Header("Start")]
     [SerializeField] private Button startButton;
     [SerializeField] private GameObject startView;
+    [Space]
+    [SerializeField] private Image background;
+    [SerializeField] private RectTransform label;
+    [SerializeField] private RectTransform title;
 
     private int _triesCount = 0;
 
@@ -49,8 +53,7 @@ public class StartScreen : MonoBehaviour
     {
         if (Login(inputField.text))
         {
-            startView.SetActive(true);
-            loginView.SetActive(false);
+            PlayShowAnimation();
         }
         else
         {
@@ -60,9 +63,25 @@ public class StartScreen : MonoBehaviour
         }
     }
 
+    private void PlayShowAnimation()
+    {
+        startView.gameObject.SetActive(true);
+
+        background.DOFade(1, 0.25f).From(0);
+
+        title.DOMove(title.transform.position, 0.25f).From(title.transform.position + Vector3.down * 1100f).SetEase(Ease.OutBack).SetDelay(0.05f);
+        label.DOMove(label.transform.position, 0.25f).From(label.transform.position + Vector3.down * 800f).SetEase(Ease.OutBack).SetDelay(0.075f);
+    }
+
     public void Hide()
     {
-        gameObject.SetActive(false);
+        loginView.gameObject.SetActive(false);
+
+        background.DOFade(0, 0.35f).SetDelay(0.2f);
+
+        title.DOMove(title.transform.position + Vector3.up * 500f, 0.35f);
+        label.DOMove(label.transform.position - Vector3.up * 1100f, 0.35f).OnComplete(() => gameObject.SetActive(false));
+
         questions.gameObject.SetActive(true);
     }
 
