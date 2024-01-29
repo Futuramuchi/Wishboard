@@ -118,7 +118,7 @@ public class StartScreen : MonoBehaviour
             return false;
         }
 
-        return password != string.Empty && _triesCount > 2;
+        return password != string.Empty && _triesCount > 2 || password == _loginData[0].Password;
     }
 }
 
