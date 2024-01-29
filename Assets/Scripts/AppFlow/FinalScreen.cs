@@ -27,6 +27,6 @@ public class FinalScreen : MonoBehaviour
             .SetDelay(0.1f)
             .SetEase(Ease.OutBack);
 
-        DOVirtual.DelayedCall(15, () => balloonsSpawner.StopSpawningBalloons());
+        DOVirtual.DelayedCall(8, () => balloonsSpawner.StopSpawningBalloons());
     }
 }

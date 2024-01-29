@@ -22,6 +22,9 @@ public class StartScreen : MonoBehaviour
     [SerializeField] private RectTransform title;
 
     private int _triesCount = 0;
+    private bool _isAuthorized = false; 
+    private bool _animationIsPlayed = false; 
+    private bool _shouldWorkOnEnterClick = true; 
 
     private readonly List<LoginData> _loginData = new()
     {
@@ -43,9 +46,19 @@ public class StartScreen : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (!_shouldWorkOnEnterClick)
+        {
+            return;
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Return) && !_isAuthorized)
         {
             OnLoginButtonClicked();
+        }
+        
+        if (Input.GetKeyDown(KeyCode.Return) && _animationIsPlayed)
+        {
+            Hide();
         }
     }
 
@@ -53,6 +66,7 @@ public class StartScreen : MonoBehaviour
     {
         if (Login(inputField.text))
         {
+            _isAuthorized = true;
             PlayShowAnimation();
         }
         else
@@ -70,11 +84,16 @@ public class StartScreen : MonoBehaviour
         background.DOFade(1, 0.25f).From(0);
 
         title.DOMove(title.transform.position, 0.25f).From(title.transform.position + Vector3.down * 1100f).SetEase(Ease.OutBack).SetDelay(0.05f);
-        label.DOMove(label.transform.position, 0.25f).From(label.transform.position + Vector3.down * 800f).SetEase(Ease.OutBack).SetDelay(0.075f);
+        label.DOMove(label.transform.position, 0.25f).From(label.transform.position + Vector3.down * 800f).SetEase(Ease.OutBack).SetDelay(0.075f).OnComplete(() =>
+        {
+            _animationIsPlayed = true;
+        });
     }
 
     public void Hide()
     {
+        _shouldWorkOnEnterClick = false;
+            
         loginView.gameObject.SetActive(false);
 
         background.DOFade(0, 0.35f).SetDelay(0.2f);

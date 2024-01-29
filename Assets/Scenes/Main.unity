@@ -3236,16 +3236,16 @@ MonoBehaviour:
         \u0440\u0435\u0441\u0443\u0440\u0441 \u044E\u0440\u0438\u0441\u0442\u0430,
         ProjectMate \u2013 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442
         \u044E\u0440\u0438\u0441\u0442\u0430"
-      Image: {fileID: 21300000, guid: e04a119f63e27c8468f96b16edde0a27, type: 3}
+      Image: {fileID: 21300000, guid: cc9151d08a827074c95267d650df082a, type: 3}
     - Text: If you want to increase business efficiency, first become more efficient
         yourself, and second, implement ProjectMate
-      Image: {fileID: 21300000, guid: 16418b6ec09c5ac4f989aaae7589b162, type: 3}
+      Image: {fileID: 21300000, guid: 06f42dae3a4d50842b0f5bb5cba06a5d, type: 3}
     - Text: ProjectMate first, then everything else
-      Image: {fileID: 21300000, guid: 1a48c0f3834534243976b25a5ac8030f, type: 3}
+      Image: {fileID: 21300000, guid: 7bf5d97774591714bb4caf33fb6c483c, type: 3}
     - Text: All you need iiiiiiis ProjectMate
-      Image: {fileID: 21300000, guid: 6fd913ff0e8354e43af45755421a3602, type: 3}
+      Image: {fileID: 21300000, guid: 252b37bb0c33da245a88d70623224eb9, type: 3}
     - Text: For a happy life you need good wife, for a high rate - you need Projectmate
-      Image: {fileID: 21300000, guid: ae22705baab6d1f4e9c84d2754c84896, type: 3}
+      Image: {fileID: 21300000, guid: b60c584eb5f11e04c91b0ba606848905, type: 3}
   - Type: 0
     Question: "5. \u0412\u0440\u0435\u043C\u044F \u0432 ProjectMate \u043C\u043E\u0436\u043D\u043E
       \u0443\u0447\u0438\u0442\u044B\u0432\u0430\u0442\u044C"
@@ -3272,8 +3272,9 @@ MonoBehaviour:
     - Text: "\u041A\u0430\u043A \u0432\u0441\u0442\u0443\u043F\u0438\u0442\u044C
         \u0432 \u043A\u043B\u0443\u0431 ProjectMate"
       Image: {fileID: 21300000, guid: ee6653b56878cec41a1a7987ad21dfa8, type: 3}
-    - Text: "\u0421\u0438\u043B\u043E\u0439 \u043C\u044B\u0441\u043B\u0438"
-      Image: {fileID: 21300000, guid: c7aa62ae78ffca0498c89e5f45f94c0e, type: 3}
+    - Text: "\u041A\u0430\u043A \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
+        ProjectMate \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E"
+      Image: {fileID: 21300000, guid: b0a9fe75d5f742249bffe56a8189c653, type: 3}
   - Type: 0
     Question: "7. \u041D\u0430 \u044D\u043A\u0440\u0430\u043D\u0430\u0445 \u043C\u043E\u043D\u0438\u0442\u043E\u0440\u0438\u043D\u0433\u0430
       \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u043E\u0444\u0438\u0441\u0443
