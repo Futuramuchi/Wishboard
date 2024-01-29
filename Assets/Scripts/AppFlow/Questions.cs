@@ -14,7 +14,7 @@ public class Questions : MonoBehaviour
     {
         questionView.NextQuestionButtonClicked += OnNextQuestionButtonClicked;
 
-        questionView.Set(Data[0], $"1/{Data.Length}");
+        questionView.Set(Data[0], $"До отправки на реализацию осталось шагов: {Data.Length - _currentQuestion}");
     }
 
     private void OnNextQuestionButtonClicked()
@@ -26,7 +26,7 @@ public class Questions : MonoBehaviour
 
         _currentQuestion += 1;
 
-        questionView.Set(Data[_currentQuestion], $"{_currentQuestion + 1}/{Data.Length}");
+        questionView.Set(Data[_currentQuestion], $"До отправки на реализацию осталось шагов: {Data.Length - _currentQuestion}");
     }
 }
 

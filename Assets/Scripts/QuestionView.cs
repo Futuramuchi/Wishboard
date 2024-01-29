@@ -48,7 +48,7 @@ public class QuestionView : MonoBehaviour
 
         nextQuestionButton.gameObject.SetActive(false);
 
-        transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.right * Screen.width);
+        transform.DOMove(_basePosition, 0.45f).From(_basePosition - Vector2.up * Screen.width);
 
         questionText.text = data.Question;
         pages.text = page;
@@ -88,7 +88,7 @@ public class QuestionView : MonoBehaviour
     public void PlayNextAnimation()
     {
         transform
-            .DOMove(_basePosition - Vector2.left * Screen.width, 0.45f)
+            .DOMove(_basePosition - Vector2.down * Screen.width, 0.45f)
             .OnComplete(() =>
             {
                 NextQuestionButtonClicked?.Invoke();
