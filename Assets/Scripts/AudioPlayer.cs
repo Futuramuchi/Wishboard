@@ -1,51 +1,30 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public static class AudioPlayer
+public class AudioPlayer : MonoBehaviour
 {
-    public static void PlayForAutograph()
+    [SerializeField] private AudioSource audioSource;
+    [Space]
+    [SerializeField] private AudioClip clipAutograph;
+    [SerializeField] private AudioClip clipAroma;
+    [SerializeField] private AudioClip clipLegalBusiness;
+    [SerializeField] private AudioClip clipDocumentalCinema;
+    [SerializeField] private AudioClip clipClubJoin;
+    [SerializeField] private AudioClip clipWatch;
+    [SerializeField] private AudioClip clipLegalOlympic;
+    [SerializeField] private AudioClip clipSuccessfulBuild;
+
+    public static AudioPlayer Instance;
+
+    private void Awake()
     {
-        
+        Instance = this;
     }
-    
-    public static void PlayForAroma()
+
+    public void PlaySfx(AudioClip clip)
     {
-        
+        audioSource.clip = clip;
+        audioSource.Play();
     }
-    
-    public static void PlayForLegalBusiness()
-    {
-        
-    }
-    
-    public static void PlayForDocumentalCinema()
-    {
-        
-    }
-    
-    public static void PlayForClubJoin()
-    {
-            
-    }
-    
-    public static void PlayForClubJoin()
-    {
-                
-    }
-    
-    public static void PlayForWatch()
-    {
-                    
-    }
-    
-    public static void PlayForLegalOlympic()
-    {
-                        
-    }
-      
-   public static void PlayForSuccessfulBuild()
-   {
-                        
-   }
+
+    public void PlaySuccessfulBuild() => PlaySfx(clipSuccessfulBuild);
 }

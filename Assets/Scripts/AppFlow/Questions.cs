@@ -43,6 +43,7 @@ public struct AnswersData
 {
     public string Text;
     public Sprite Image;
+    public AudioClip AudioClip;
 }
 
 public enum QuestionType

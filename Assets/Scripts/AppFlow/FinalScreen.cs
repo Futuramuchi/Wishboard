@@ -28,5 +28,7 @@ public class FinalScreen : MonoBehaviour
             .SetEase(Ease.OutBack);
 
         DOVirtual.DelayedCall(8, () => balloonsSpawner.StopSpawningBalloons());
+
+        AudioPlayer.Instance.PlaySuccessfulBuild();
     }
 }

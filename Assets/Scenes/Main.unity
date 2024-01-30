@@ -2411,6 +2411,156 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081043492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081043493}
+  - component: {fileID: 1081043495}
+  - component: {fileID: 1081043494}
+  m_Layer: 0
+  m_Name: AudioPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081043493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081043492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1081043494
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081043492}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24300002, guid: cf834f752585474438655db1af1a2767, type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.647
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1081043495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081043492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5be13fc8a6f8347acbf6e7e3fcc61c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1081043494}
+  clipAutograph: {fileID: 8300000, guid: 5bab1e1163c1fad46bc53aa6b440dd86, type: 3}
+  clipAroma: {fileID: 8300000, guid: 86340fa117040cf458a6823b053e5bd1, type: 3}
+  clipLegalBusiness: {fileID: 8300000, guid: 72d0a9f56d3737b499019e2c6fef9075, type: 3}
+  clipDocumentalCinema: {fileID: 8300000, guid: 2d47520b97d6f684b9847ed6c3f69560, type: 3}
+  clipClubJoin: {fileID: 8300000, guid: 5b8451db2a2d7ec4285dbfc3738f9069, type: 3}
+  clipWatch: {fileID: 8300000, guid: 6ae581bbd4b3f1a4a980f856cd8e08fe, type: 3}
+  clipLegalOlympic: {fileID: 8300000, guid: 6e18eeae9f7958c448fd8bdda4dfa580, type: 3}
+  clipSuccessfulBuild: {fileID: 8300000, guid: 0b1a1779c1f3131428bd8e0ef9e22bb8, type: 3}
 --- !u!1 &1090736030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2736,6 +2886,7 @@ GameObject:
   - component: {fileID: 1179161308}
   - component: {fileID: 1179161307}
   - component: {fileID: 1179161306}
+  - component: {fileID: 1179161309}
   m_Layer: 5
   m_Name: Password
   m_TagString: Untagged
@@ -2823,7 +2974,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 35
-  m_CharacterLimit: 0
+  m_CharacterLimit: 8
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -2901,6 +3052,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179161304}
   m_CullTransparentMesh: 1
+--- !u!114 &1179161309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179161304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8884453760b4e478aa87f5defa1a36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1179161306}
 --- !u!1 &1189886466
 GameObject:
   m_ObjectHideFlags: 0
@@ -3337,28 +3501,36 @@ MonoBehaviour:
         \u0432 \u043E\u0441\u043E\u0431\u043D\u044F\u043A\u0435 \u0432 \u0446\u0435\u043D\u0442\u0440\u0435
         \u041C\u043E\u0441\u043A\u0432\u044B"
       Image: {fileID: 21300000, guid: 22cecd14950b09249bda1e3a79ee7dba, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0421\u043E\u0432\u0440\u0435\u043C\u0435\u043D\u043D\u044B\u0439 \u043E\u0444\u0438\u0441
         \u0432 \u0434\u0443\u0445\u0435 \u0441\u0432\u043E\u0431\u043E\u0434\u044B
         \u0438 \u0442\u0432\u043E\u0440\u0447\u0435\u0441\u0442\u0432\u0430"
       Image: {fileID: 21300000, guid: 49e891277b17a0d44b5be9482fa68b4e, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041F\u0440\u043E\u0441\u0442\u043E\u0439 \u043E\u0444\u0438\u0441
         \u0432 \u0441\u0442\u0438\u043B\u0435 Open Space \u0438 \u043C\u0438\u043D\u0438\u043C\u0430\u043B\u0438\u0437\u043C\u0430"
       Image: {fileID: 21300000, guid: 863c740624355aa4b813d0072f0f8c0b, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0421\u0442\u0438\u043B\u044C\u043D\u044B\u0439 \u043E\u0444\u0438\u0441
         \u0432 \u041C\u043E\u0441\u043A\u0432\u0430 \u0421\u0438\u0442\u0438 \u0432
         \u043D\u0435\u0431\u0435\u0441\u0430\u0445"
       Image: {fileID: 21300000, guid: 24d7cd54a6d1307448193b95d0acbdff, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "2. \u0428\u0442\u0430\u0442 \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0432"
     Answers:
     - Text: 20
       Image: {fileID: 21300000, guid: 18fc30f61c173c142b24ced84bcc7cc4, type: 3}
+      AudioClip: {fileID: 0}
     - Text: 50
       Image: {fileID: 21300000, guid: 4ab508e36ed1fa746a5a81053dc684ed, type: 3}
+      AudioClip: {fileID: 0}
     - Text: 100
       Image: {fileID: 21300000, guid: b14a931695488bc4cb4fb50fb65ca000, type: 3}
+      AudioClip: {fileID: 0}
     - Text: 1 (ENB)
       Image: {fileID: 21300000, guid: 984c513deded449439b7c10016a47e5b, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "3. \u0412\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435
       ProjectMate \u2013 \u0440\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u0438\u0439
@@ -3366,12 +3538,16 @@ MonoBehaviour:
     Answers:
     - Text: ProjectMate Pro
       Image: {fileID: 21300000, guid: 12664acc811064f459154c165995fe2b, type: 3}
+      AudioClip: {fileID: 0}
     - Text: ProjectMate Gorgeous
       Image: {fileID: 21300000, guid: 5135d730a0834da4799cea85ca84236e, type: 3}
+      AudioClip: {fileID: 0}
     - Text: ProjectMate Professional Word System
       Image: {fileID: 21300000, guid: 9bf78dde41a64d64fa019650395b0c88, type: 3}
+      AudioClip: {fileID: 0}
     - Text: ProjectMate OneLove
       Image: {fileID: 21300000, guid: 135be834183b0164c98ca56ba804b560, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "4. \u0421\u0442\u0430\u043B \u0432\u0441\u0435\u043C\u0438\u0440\u043D\u043E
       \u0438\u0437\u0432\u0435\u0441\u0442\u0435\u043D \u0441\u043B\u043E\u0433\u0430\u043D:"
@@ -3381,29 +3557,38 @@ MonoBehaviour:
         ProjectMate \u2013 \u0433\u043B\u0430\u0432\u043D\u044B\u0439 \u0438\u043D\u0441\u0442\u0440\u0443\u043C\u0435\u043D\u0442
         \u044E\u0440\u0438\u0441\u0442\u0430"
       Image: {fileID: 21300000, guid: cc9151d08a827074c95267d650df082a, type: 3}
+      AudioClip: {fileID: 0}
     - Text: If you want to increase business efficiency, first become more efficient
         yourself, and second, implement ProjectMate
       Image: {fileID: 21300000, guid: 06f42dae3a4d50842b0f5bb5cba06a5d, type: 3}
+      AudioClip: {fileID: 0}
     - Text: ProjectMate first, then everything else
       Image: {fileID: 21300000, guid: 7bf5d97774591714bb4caf33fb6c483c, type: 3}
+      AudioClip: {fileID: 0}
     - Text: All you need iiiiiiis ProjectMate
       Image: {fileID: 21300000, guid: 252b37bb0c33da245a88d70623224eb9, type: 3}
+      AudioClip: {fileID: 0}
     - Text: For a happy life you need good wife, for a high rate - you need Projectmate
       Image: {fileID: 21300000, guid: b60c584eb5f11e04c91b0ba606848905, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "5. \u0412\u0440\u0435\u043C\u044F \u0432 ProjectMate \u043C\u043E\u0436\u043D\u043E
       \u0443\u0447\u0438\u0442\u044B\u0432\u0430\u0442\u044C"
     Answers:
     - Text: "\u0427\u0435\u0440\u0435\u0437 \u0443\u043C\u043D\u044B\u0435 \u0447\u0430\u0441\u044B"
       Image: {fileID: 21300000, guid: 1ca85879e3aa88444a9189c70d9e64a1, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0421 \u043F\u043E\u043C\u043E\u0449\u044C\u044E \u0410\u043B\u0438\u0441\u044B"
       Image: {fileID: 21300000, guid: 854bb8201fada3444b7ac503fbf8657f, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0417\u0430\u0447\u0435\u043C \u0410\u043B\u0438\u0441\u0430, \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043D
         \u0441\u0432\u043E\u0439 \u043F\u043E\u043C\u043E\u0449\u043D\u0438\u043A
         - \u041F\u0440\u043E\u0448\u043A\u0430"
       Image: {fileID: 21300000, guid: 03a9c54e2e4c3cd4db265620ef0330fa, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0421\u0438\u043B\u043E\u0439 \u043C\u044B\u0441\u043B\u0438"
       Image: {fileID: 21300000, guid: ab0dcaa4c31e26845b37b711a932ff15, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "6. \u0421\u0430\u043C\u044B\u0439 \u043F\u043E\u043F\u0443\u043B\u044F\u0440\u043D\u044B\u0439
       \u0437\u0430\u043F\u0440\u043E\u0441 \u0441\u043E \u0441\u043B\u043E\u0432\u043E\u043C
@@ -3413,12 +3598,15 @@ MonoBehaviour:
         \u0434\u043E\u0440\u043E\u0433\u043E\u0439, \u043D\u043E \u0435\u0433\u043E
         \u0432\u0441\u0435 \u043F\u043E\u043A\u0443\u043F\u0430\u044E\u0442"
       Image: {fileID: 21300000, guid: b6739aeb97633c5459ab616d0cb6a8c1, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041A\u0430\u043A \u0432\u0441\u0442\u0443\u043F\u0438\u0442\u044C
         \u0432 \u043A\u043B\u0443\u0431 ProjectMate"
       Image: {fileID: 21300000, guid: ee6653b56878cec41a1a7987ad21dfa8, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041A\u0430\u043A \u0443\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C
         ProjectMate \u0431\u0435\u0441\u043F\u043B\u0430\u0442\u043D\u043E"
       Image: {fileID: 21300000, guid: b0a9fe75d5f742249bffe56a8189c653, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "7. \u041D\u0430 \u044D\u043A\u0440\u0430\u043D\u0430\u0445 \u043C\u043E\u043D\u0438\u0442\u043E\u0440\u0438\u043D\u0433\u0430
       \u043F\u043E \u0432\u0441\u0435\u043C\u0443 \u043E\u0444\u0438\u0441\u0443
@@ -3428,6 +3616,7 @@ MonoBehaviour:
         \u0432 \u0440\u0435\u0436\u0438\u043C\u0435 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0433\u043E
         \u0432\u0440\u0435\u043C\u0435\u043D\u0438"
       Image: {fileID: 21300000, guid: ee3d76de28b25244b93867b6f2887b75, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0434\u043D\u0435\u0439
         \u0434\u043E \u0440\u0435\u043B\u0438\u0437\u0430 \u0438 \u043D\u0430\u0441\u0442\u0440\u043E\u0435\u043D\u0438\u0435
         \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A\u043E\u0432
@@ -3436,11 +3625,13 @@ MonoBehaviour:
         (\u041E\u0441\u0442\u043E\u0440\u043E\u0436\u043D\u043E! \u0417\u043B\u044B\u0435
         \u0442\u0435\u0441\u0442\u0438\u0440\u043E\u0432\u0449\u0438\u043A\u0438!)"
       Image: {fileID: 21300000, guid: 8e4ccfb6832017745ba146a7941edb59, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0447\u0430\u0448\u0435\u043A
         \u0432\u044B\u043F\u0438\u0442\u043E\u0433\u043E \u043A\u043E\u0444\u0435
         \u0432 \u0440\u0435\u0436\u0438\u043C\u0435 \u0440\u0435\u0430\u043B\u044C\u043D\u043E\u0433\u043E
         \u0432\u0440\u0435\u043C\u0435\u043D\u0438"
       Image: {fileID: 21300000, guid: 08a2c257b0d822c4794bd9517b25b69a, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "8. \u0421\u043F\u043E\u043D\u0441\u043E\u0440\u0441\u043A\u0438\u0439
       \u043F\u0440\u043E\u0435\u043A\u0442 \u0410\u0432\u0438\u043A\u043E\u043C\u0430:"
@@ -3449,14 +3640,17 @@ MonoBehaviour:
         \u0430\u0440\u043E\u043C\u0430\u0442\u043E\u0432 \u0434\u043B\u044F \u0437\u0430\u043B\u043E\u0432
         \u0441\u0443\u0434\u0430"
       Image: {fileID: 21300000, guid: bbac46519650d034b860f47a12f8f1ed, type: 3}
+      AudioClip: {fileID: 8300000, guid: 86340fa117040cf458a6823b053e5bd1, type: 3}
     - Text: "\u042E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0435 \u043E\u043B\u0438\u043C\u043F\u0438\u0439\u0441\u043A\u0438\u0435
         \u0438\u0433\u0440\u044B (\u0431\u0438\u0430\u0442\u043B\u043E\u043D, \u0448\u0430\u0445\u043C\u0430\u0442\u044B,
         \u0440\u044B\u0431\u0430\u043B\u043A\u0430)"
       Image: {fileID: 21300000, guid: a70e96379d77fe4418169ae9b64da367, type: 3}
+      AudioClip: {fileID: 8300000, guid: 6e18eeae9f7958c448fd8bdda4dfa580, type: 3}
     - Text: "\u0412\u0435\u0441\u044C \u044E\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043A\u0438\u0439
         \u0431\u0438\u0437\u043D\u0435\u0441 \u0438 \u0435\u0441\u0442\u044C \u043D\u0430\u0448
         \u043F\u0440\u043E\u0435\u043A\u0442"
       Image: {fileID: 21300000, guid: 95c0dbd0136bbb7439ddee1f632fea1c, type: 3}
+      AudioClip: {fileID: 8300000, guid: 72d0a9f56d3737b499019e2c6fef9075, type: 3}
   - Type: 0
     Question: "9. \u0413\u043B\u0430\u0432\u043D\u044B\u0439 \u043F\u0430\u0440\u0442\u043D\u0435\u0440
       / \u043A\u043B\u0438\u0435\u043D\u0442"
@@ -3464,14 +3658,18 @@ MonoBehaviour:
     - Text: "\u0421\u0430\u0442\u044C\u044F \u041D\u0430\u0434\u0435\u043B\u043B\u0430
         (\u0433\u0435\u043D\u0434\u0438\u0440 Microsoft)"
       Image: {fileID: 21300000, guid: cd21653183c7d74429445fa685bd0d05, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0420\u043E\u0431\u0435\u0440\u0442 \u0428\u0430\u043F\u0438\u0440\u043E
         (\u044E\u0440\u0438\u0441\u0442)"
       Image: {fileID: 21300000, guid: 3e8a9120c0b1bbe4c86acad2c67ee8f8, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440 \u041A\u0438\u0440\u0438\u0435\u043D\u043A\u043E
         (\u0433\u0435\u043D\u0434\u0438\u0440 \u0412\u041A)"
       Image: {fileID: 21300000, guid: c6eece4a64891c047860210b67ed12c6, type: 3}
+      AudioClip: {fileID: 0}
     - Text: "\u041A\u043B\u0430\u0432\u0430 \u041A\u043E\u043A\u0430 (\u043F\u0435\u0432\u0438\u0446\u0430)"
       Image: {fileID: 21300000, guid: 4ecee24f48b996849af0a41e9e97d54d, type: 3}
+      AudioClip: {fileID: 0}
   - Type: 0
     Question: "10. \u041A\u0430\u043A \u0432\u044B\u0433\u043B\u044F\u0434\u0438\u0442
       \u043F\u043E\u0434\u0430\u0440\u043E\u043A, \u043A\u043E\u0442\u043E\u0440\u044B\u0439
@@ -3483,15 +3681,19 @@ MonoBehaviour:
     - Text: "\u0427\u0430\u0441\u044B \u0441\u043E \u0441\u043B\u043E\u0433\u0430\u043D\u043E\u043C
         ProjectMate"
       Image: {fileID: 21300000, guid: e994b879c09cd584da356b01f67fb762, type: 3}
+      AudioClip: {fileID: 8300000, guid: 6ae581bbd4b3f1a4a980f856cd8e08fe, type: 3}
     - Text: "\u041F\u0440\u0430\u0432\u043E \u0432\u0441\u0442\u0443\u043F\u0438\u0442\u044C
         \u0432 \u041A\u043B\u0443\u0431"
       Image: {fileID: 21300000, guid: b085e4a617bd9d449a0568f6682848a1, type: 3}
+      AudioClip: {fileID: 8300000, guid: 5b8451db2a2d7ec4285dbfc3738f9069, type: 3}
     - Text: "\u0414\u043E\u043A\u0443\u043C\u0435\u043D\u0442\u0430\u043B\u044C\u043D\u044B\u0439
         \u0444\u0438\u043B\u044C\u043C \u0441 \u0438\u0441\u0442\u043E\u0440\u0438\u0435\u0439
         \u0443\u0441\u043F\u0435\u0445\u0430 ProjectMate"
       Image: {fileID: 21300000, guid: bfaa943e45029ac40b5751a49b4034b5, type: 3}
+      AudioClip: {fileID: 8300000, guid: 2d47520b97d6f684b9847ed6c3f69560, type: 3}
     - Text: "\u0410\u0432\u0442\u043E\u0433\u0440\u0430\u0444 ENB"
       Image: {fileID: 21300000, guid: b1d04c4402d3e944e9ec697dec6f8aa9, type: 3}
+      AudioClip: {fileID: 8300000, guid: 5bab1e1163c1fad46bc53aa6b440dd86, type: 3}
   questionView: {fileID: 1493492639}
   finalScreen: {fileID: 2025644826}
 --- !u!114 &1493492641

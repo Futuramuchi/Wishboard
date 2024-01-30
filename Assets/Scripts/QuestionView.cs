@@ -80,6 +80,9 @@ public class QuestionView : MonoBehaviour
                 }
 
                 nextQuestionButton.gameObject.SetActive(true);
+
+                if (answer.AudioClip != null)
+                    AudioPlayer.Instance.PlaySfx(answer.AudioClip);
             });
         }
     }
