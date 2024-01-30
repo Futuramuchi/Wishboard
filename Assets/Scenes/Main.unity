@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u041F\u0430\u0440\u043E\u043B\u044C"
+  m_text: "\u0434\u0434/\u043C\u043C/\u0433\u0433\u0433\u0433"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f5b1b7a4bf85c414a8136b315a27df42, type: 2}
   m_sharedMaterial: {fileID: 7400106386796545539, guid: f5b1b7a4bf85c414a8136b315a27df42, type: 2}
@@ -2974,7 +2974,7 @@ MonoBehaviour:
   m_CharacterValidation: 0
   m_RegexValue: 
   m_GlobalPointSize: 35
-  m_CharacterLimit: 8
+  m_CharacterLimit: 10
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []

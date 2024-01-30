@@ -18,18 +18,21 @@ public class DateInputMask : MonoBehaviour
         }
         else
         {
-            string input = inputField.text;
-            string MatchPattern = @"^((\d{2}/){0,2}(\d{1,2})?)$";
-            string ReplacementPattern = "$1/$3";
-            string ToReplacePattern = @"((\.?\d{2})+)(\d)";
+            var input = inputField.text;
+            var matchPattern = @"^((\d{2}/){0,2}(\d{1,2})?)$";
+            var replacementPattern = "$1/$3";
+            var toReplacePattern = @"((\.?\d{2})+)(\d)";
 
-            input = Regex.Replace(input, ToReplacePattern, ReplacementPattern);
-            Match result = Regex.Match(input, MatchPattern);
-            if (result.Success)
+            input = Regex.Replace(input, toReplacePattern, replacementPattern);
+            var result = Regex.Match(input, matchPattern);
+
+            if (!result.Success)
             {
-                inputField.text = input;
-                inputField.stringPosition = input.Length;
+                return;
             }
+            
+            inputField.text = input;
+            inputField.stringPosition = input.Length;
         }
     }
 }

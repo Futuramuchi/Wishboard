@@ -108,6 +108,8 @@ public class StartScreen : MonoBehaviour
     {
         _triesCount++;
 
+        password = password.Replace("/", "");
+
         if (password != _loginData[0].Password && _triesCount == 1)
         {
             return false;
